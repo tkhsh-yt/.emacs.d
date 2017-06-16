@@ -1,0 +1,17 @@
+# Mac
+.DS_Store
+
+# temp
+eshell/
+auto-save-list/
+backups/
+url/
+undohist/
+ensime/
+recentf
+elscreen
+ac-comphist.dat
+
+# packages
+el-get/
+elpa/
