@@ -1,5 +1,7 @@
 (package-initialize)
 
+(setq custom-file (locate-user-emacs-file "custom.el"))
+
 ;; el-get
 (when load-file-name
   (setq user-emacs-directory (file-name-directory load-file-name)))
@@ -23,4 +25,11 @@
   (setq init-loader-show-log-after-init nil)
   (init-loader-load "~/.emacs.d/inits"))
 
-(setq custom-file (locate-user-emacs-file "custom.el"))
+(el-get-bundle auto-compile)
+
+(use-package auto-compile
+  :no-require t
+  :defer t
+  :diminish auto-compile-mode
+  :init
+  (add-hook 'emacs-lisp-mode-hook 'auto-compile-mode))
