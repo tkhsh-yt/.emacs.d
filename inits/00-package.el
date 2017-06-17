@@ -48,4 +48,9 @@
 
 ;;;; For programming
 (el-get-bundle flycheck)
+(el-get-bundle quickrun)
 
+;; Go
+(el-get-bundle go-mode)
+(el-get-bundle go-eldoc)
+(el-get-bundle go-autocomplete)
