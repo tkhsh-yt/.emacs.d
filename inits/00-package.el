@@ -54,3 +54,7 @@
 (el-get-bundle go-mode)
 (el-get-bundle go-eldoc)
 (el-get-bundle go-autocomplete)
+
+;; C
+(el-get-bundle c-eldoc)
+(el-get-bundle auto-complete-c-headers)
