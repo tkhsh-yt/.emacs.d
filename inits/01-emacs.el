@@ -43,9 +43,10 @@
 (setq ring-bell-function 'ignore)
 
 ;; フォントを設定
-(set-face-attribute 'default nil :family "Source Han Code JP")
+(set-face-attribute 'default nil :family "Source Han Code JP R")
 
 ;; C-k で行全体を削除
 (setq kill-whole-line t)
 
 (add-to-list 'default-frame-alist '(alpha . (0.9 0.9)))
+

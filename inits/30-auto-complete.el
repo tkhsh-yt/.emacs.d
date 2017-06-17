@@ -1,4 +1,5 @@
 (use-package auto-complete-config
+  :diminish auto-complete-mode
   :init
   (ac-config-default)
   (global-auto-complete-mode t)

@@ -15,3 +15,6 @@ ac-comphist.dat
 # packages
 el-get/
 elpa/
+
+# projectile
+projectile-bookmarks.eld
