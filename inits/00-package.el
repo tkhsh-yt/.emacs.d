@@ -50,6 +50,9 @@
 (el-get-bundle flycheck)
 (el-get-bundle quickrun)
 
+;; Markdown
+(el-get-bundle markdown-mode)
+
 ;; Make
 (el-get-bundle abo-abo/helm-make)
 
