@@ -46,6 +46,9 @@
 (el-get-bundle avy)
 (el-get-bundle expand-region)
 
+;; Org
+(el-get-bundle org-bullets)
+
 ;;;; For programming
 (el-get-bundle flycheck)
 (el-get-bundle quickrun)
