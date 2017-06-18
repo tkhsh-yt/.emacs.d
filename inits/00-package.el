@@ -50,6 +50,9 @@
 (el-get-bundle flycheck)
 (el-get-bundle quickrun)
 
+;; Make
+(el-get-bundle abo-abo/helm-make)
+
 ;; Go
 (el-get-bundle go-mode)
 (el-get-bundle go-eldoc)
@@ -58,3 +61,4 @@
 ;; C
 (el-get-bundle c-eldoc)
 (el-get-bundle auto-complete-c-headers)
+

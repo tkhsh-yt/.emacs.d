@@ -1,4 +1,5 @@
 (use-package cc-mode
+  :defer t
   :mode (("\\.h\\'" . c++-mode))
   :config
   (setq c-default-style "k&r")
@@ -7,6 +8,7 @@
   (add-hook 'c-mode-common-hook 'flycheck-mode))
 
 (use-package auto-complete-c-headers
+  :defer t
   :config
   (add-hook 'c++-mode-hook '(setq ac-sources (append ac-sources '(ac-source-c-headers))))
   (add-hook 'c-mode-hook '(setq ac-sources (append ac-sources '(ac-source-c-headers)))))
