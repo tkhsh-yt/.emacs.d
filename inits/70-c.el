@@ -3,8 +3,7 @@
   :config
   (setq c-default-style "k&r")
   (setq indent-tabs-mode nil)
-  (setq c-basic-offset 2)
-  (add-hook 'c-mode-common-hook 'flycheck-mode))
+  (setq c-basic-offset 2))
 
 (use-package auto-complete-c-headers
   :config
