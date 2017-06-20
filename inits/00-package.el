@@ -27,7 +27,7 @@
 (el-get-bundle anzu)
 
 ;; For completion
-(el-get-bundle auto-complete)
+(el-get-bundle company-mode)
 
 ;; Proejctile
 (el-get-bundle projectile
@@ -52,6 +52,7 @@
 ;;;; For programming
 (el-get-bundle flycheck)
 (el-get-bundle quickrun)
+(el-get-bundle yasnippet)
 
 ;; Markdown
 (el-get-bundle markdown-mode)
@@ -62,7 +63,8 @@
 ;; Go
 (el-get-bundle go-mode)
 (el-get-bundle go-eldoc)
-(el-get-bundle go-autocomplete)
+(el-get-bundle company-go
+  :url "https://raw.githubusercontent.com/nsf/gocode/master/emacs-company/company-go.el")
 
 ;; C
 (el-get-bundle c-eldoc)

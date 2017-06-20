@@ -24,6 +24,9 @@
 
 ;; 行番号の表示
 (global-linum-mode t)
+(setq linum-delay t)
+(defadvice linum-schedule (around my-linum-schedule () activate)
+  (run-with-idle-timer 0.2 nil #'linum-update-current))
 
 ;; スクロールバーを非表示
 (scroll-bar-mode 0)
