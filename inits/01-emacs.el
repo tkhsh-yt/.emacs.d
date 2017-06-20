@@ -48,5 +48,9 @@
 ;; C-k で行全体を削除
 (setq kill-whole-line t)
 
+;; 透過
 (add-to-list 'default-frame-alist '(alpha . (0.9 0.9)))
+
+;; 自動改行オフ
+(setq text-mode-hook 'turn-off-auto-fill)
 
