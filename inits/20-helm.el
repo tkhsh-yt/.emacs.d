@@ -7,7 +7,8 @@
 	 ("C-' g" . helm-do-grep-ag)
 	 ("C-' s" . helm-swoop)
 	 ("C-' S" . helm-multi-swoop-all)
-	 ("C-' t" . helm-elscreen))
+	 ("C-' t" . helm-elscreen)
+	 ("C-' c" . helm-make))
   :config
   (setq helm-M-x-fuzzy-match t)
   (helm-migemo-mode 1)
