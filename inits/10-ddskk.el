@@ -1,6 +1,6 @@
 (use-package ddskk
   :defer t
-  :bind (("C-j" . skk-mode))
+  :bind (("C-x j" . skk-mode))
   :init
   (setq skk-isearch-start-mode 'latin)
   (setq-default skk-kutouten-type '("．" . "，"))
