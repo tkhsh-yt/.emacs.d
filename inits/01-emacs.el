@@ -57,3 +57,5 @@
 ;; 自動改行オフ
 (setq text-mode-hook 'turn-off-auto-fill)
 
+;; バッファの自動再読み込み
+(global-auto-revert-mode 1)
