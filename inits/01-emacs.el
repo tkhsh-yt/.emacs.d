@@ -59,3 +59,11 @@
 
 ;; バッファの自動再読み込み
 (global-auto-revert-mode 1)
+
+;; 時間をモードラインに表示する
+(setq display-time-string-forms
+      '((format
+         "%s/%s(%s) %s:%s" month day dayname 24-hours minutes))
+      line-number-mode t
+      column-number-mode t)
+(display-time-mode 1)
