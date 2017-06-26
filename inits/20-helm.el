@@ -4,7 +4,7 @@
 	 ("C-x C-f" . helm-find-files)
 	 ("C-:" . helm-mini)
 	 ("C-' y" . helm-show-kill-ring)
-	 ("C-' g" . helm-do-grep-ag)
+	 ("C-x C-g" . helm-do-grep-ag)
 	 ("C-' s" . helm-swoop)
 	 ("C-' S" . helm-multi-swoop-all)
 	 ("C-' t" . helm-elscreen)
