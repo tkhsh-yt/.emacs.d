@@ -8,6 +8,7 @@
   :config
   (global-company-mode)
   (setq company-dabbrev-downcase nil)
+  (bind-key* "TAB" 'company-indent-or-complete-common)
   (bind-keys :map company-mode-map
 	     ("C-i" . company-complete))
   (bind-keys :map company-active-map
