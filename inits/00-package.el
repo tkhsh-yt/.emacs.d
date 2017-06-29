@@ -1,3 +1,7 @@
+;; For config
+(el-get-bundle! general)
+(use-package general)
+
 ;; For path
 (el-get-bundle exec-path-from-shell)
 
@@ -70,7 +74,6 @@
 
 ;; C
 (el-get-bundle c-eldoc)
-(el-get-bundle auto-complete-c-headers)
 
 ;; Lisp
 (el-get-bundle paredit)
@@ -80,6 +83,6 @@
 
 (el-get-bundle cider)
 
-(el-get-bundle clojure-emacs/clj-refactor.el)
+(el-get-bundle clj-refactor)
 (el-get-bundle clojure-emacs/clojure-cheatsheet)
 (el-get-bundle mpenet/clojure-snippets)

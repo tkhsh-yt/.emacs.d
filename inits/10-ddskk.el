@@ -1,5 +1,4 @@
 (use-package ddskk
-  :defer t
   :bind (("C-x j" . skk-mode))
   :init
   (setq skk-isearch-start-mode 'latin)

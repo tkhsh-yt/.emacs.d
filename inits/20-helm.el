@@ -9,12 +9,14 @@
 	 ("C-' S" . helm-multi-swoop-all)
 	 ("C-' t" . helm-elscreen)
 	 ("C-' c" . helm-make))
-  :config
+  :init
   (setq helm-M-x-fuzzy-match t)
-  (helm-migemo-mode 1)
   (setq helm-mini-default-sources '(helm-source-buffers-list
 				    helm-source-files-in-current-dir
-				    helm-source-recentf)))
+				    helm-source-recentf))
+  :config
+  (helm-mode 1)
+  (helm-migemo-mode 1))
 
 (use-package helm-descbinds
   :config

@@ -13,6 +13,7 @@
        "https://raw.githubusercontent.com/dimitri/el-get/master/el-get-install.el")
     (goto-char (point-max))
     (eval-print-last-sexp)))
+(setq el-get-is-lazy t)
 
 ;; use-package
 (el-get-bundle use-package)
@@ -22,15 +23,16 @@
 ;; init-loader
 (el-get-bundle init-loader)
 (use-package init-loader
-  :config
-  (setq init-loader-show-log-after-init nil)
+  :init
+  (setq init-loader-show-log-after-init t)
+  :config  
   (init-loader-load (locate-user-emacs-file "inits")))
 
 (el-get-bundle auto-compile)
 
 (use-package auto-compile
-  :no-require t
-  :defer t
   :diminish auto-compile-mode
   :init
-  (add-hook 'emacs-lisp-mode-hook 'auto-compile-mode))
+  (setq load-prefer-newer t)
+  (auto-compile-on-load-mode)
+  (auto-compile-on-save-mode))

@@ -67,3 +67,5 @@
       line-number-mode t
       column-number-mode t)
 (display-time-mode 1)
+
+(bind-key "C-' x l" 'toggle-truncate-lines)

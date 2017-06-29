@@ -2,5 +2,5 @@
   :bind (("C-' m" . magit-status)))
 
 (use-package diff-hl-mode
-  :init
+  :config
   (global-diff-hl-mode))
