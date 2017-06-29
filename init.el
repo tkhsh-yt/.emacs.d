@@ -1,7 +1,3 @@
-;; (require 'package)
-;; (add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/"))
-;; (add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
- 
 (package-initialize)
 
 (setq custom-file (locate-user-emacs-file "custom.el"))
@@ -21,13 +17,14 @@
 ;; use-package
 (el-get-bundle use-package)
 (require 'use-package)
+(add-to-list 'el-get-recipe-path (locate-user-emacs-file "recipes"))
 
 ;; init-loader
 (el-get-bundle init-loader)
 (use-package init-loader
   :config
   (setq init-loader-show-log-after-init nil)
-  (init-loader-load "~/.emacs.d/inits"))
+  (init-loader-load (locate-user-emacs-file "inits")))
 
 (el-get-bundle auto-compile)
 
