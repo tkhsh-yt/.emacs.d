@@ -1,0 +1,5 @@
+(:name cider
+       :description "The Clojure Interactive Development Environment that Rocks for Emacs"
+       :type github
+       :pkgname "clojure-emacs/cider"
+       :depends (seq queue clojure-mode pkg-info spinner multiple-cursors))

@@ -1,0 +1,6 @@
+(:name dracula-theme
+       :description "A dark theme for Emacs"
+       :website "https://github.com/dracula/emacs"
+       :type github
+       :pkgname "dracula/emacs"
+       :post-init (add-to-list 'custom-theme-load-path default-directory))

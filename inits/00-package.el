@@ -78,12 +78,7 @@
 ;; Clojure
 (el-get-bundle clojure-mode)
 
-(el-get-bundle NicolasPetton/seq.el)
-(el-get-bundle magnars/multiple-cursors.el)
-(el-get-bundle expez/edn.el)
-(el-get-bundle emacsmirror/peg)
-(el-get-bundle abo-abo/hydra)
-(el-get-bundle clojure-emacs/cider)
+(el-get-bundle cider)
 
 (el-get-bundle clojure-emacs/clj-refactor.el)
 (el-get-bundle clojure-emacs/clojure-cheatsheet)
