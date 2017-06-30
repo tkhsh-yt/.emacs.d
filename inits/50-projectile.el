@@ -3,7 +3,10 @@
 	 ("C-' p p" . helm-projectile)
 	 ("C-' p s" . helm-multi-swoop-projectile)
 	 ("C-' p f" . helm-projectile-find-file))
-  :config
-  (projectile-global-mode)
+  :init
   (setq projectile-completion-system 'helm)
+  (el-get-bundle projectile
+    :depends (helm-ag))
+  :config
+  (projectile-global-mode)  
   (helm-projectile-on))

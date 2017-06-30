@@ -14,6 +14,7 @@
   (setq helm-mini-default-sources '(helm-source-buffers-list
 				    helm-source-files-in-current-dir
 				    helm-source-recentf))
+  (el-get-bundle helm)
   :config
   (helm-mode 1)
   (helm-migemo-mode 1))
@@ -21,3 +22,11 @@
 (use-package helm-descbinds
   :config
   (helm-descbinds-mode 1))
+
+(el-get-bundle helm-swoop)
+(el-get-bundle helm-projectile)
+(el-get-bundle helm-descbinds)
+(el-get-bundle helm-company)
+(el-get-bundle abo-abo/helm-make)
+(el-get-bundle helm-ag)
+(el-get-bundle emacs-helm/helm-elscreen)

@@ -1,4 +1,6 @@
 (use-package dracula-theme
+  :init
+  (el-get-bundle dracula-theme)
   :config
   (load-theme 'dracula t))
 

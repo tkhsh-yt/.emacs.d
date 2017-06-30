@@ -13,7 +13,6 @@
        "https://raw.githubusercontent.com/dimitri/el-get/master/el-get-install.el")
     (goto-char (point-max))
     (eval-print-last-sexp)))
-(setq el-get-is-lazy t)
 
 ;; use-package
 (el-get-bundle use-package)

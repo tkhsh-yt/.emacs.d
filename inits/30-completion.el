@@ -15,5 +15,6 @@
 	company-minimum-prefix-length 2
 	company-selection-wrap-around t)
   (setq company-dabbrev-downcase nil)
+  (el-get-bundle company-mode)
   :config
   (global-company-mode +1))

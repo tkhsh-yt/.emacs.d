@@ -1,5 +1,5 @@
 (use-package migemo
-  :config
+  :init
   (setq migemo-command "cmigemo")
   (setq migemo-options '("-q" "--emacs"))
 
@@ -10,4 +10,6 @@
     (setq migemo-dictionary "/usr/share/cmigemo/utf-8/migemo-dict"))
   (when (equal system-type 'darwin)
     (setq migemo-dictionary "/usr/local/share/migemo/utf-8/migemo-dict"))
+  (el-get-bundle migemo)
+  :config
   (migemo-init))

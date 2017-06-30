@@ -3,7 +3,16 @@
   (add-hook 'clojure-mode-hook #'yas-minor-mode)
   (add-hook 'clojure-mode-hook #'subword-mode)
   (add-hook 'clojure-mode-hook #'paredit-mode)
-  (custom-set-variables '(clojure-align-forms-automatically t)))
+  (custom-set-variables '(clojure-align-forms-automatically t))
+  (el-get-bundle clojure-mode))
+
+(use-package clj-refactor
+  :diminish clj-refactor-mode
+  :init
+  (el-get-bundle clj-refactor)
+  :config
+  (clj-refactor-mode)
+  (cljr-add-keybindings-with-prefix "C-c j"))
 
 (use-package cider
   :diminish subword-mode
@@ -19,12 +28,14 @@
         cider-prompt-save-file-on-load 'always-save
         cider-font-lock-dynamically '(macro core function var)
         cider-overlays-use-font-lock t)
+  (el-get-bundle cider)
   :config
   (cider-repl-toggle-pretty-printing))
 
-(use-package clj-refactor
-  :diminish clj-refactor-mode
-  :config
-  (clj-refactor-mode)
-  (cljr-add-keybindings-with-prefix "C-c j"))
+(use-package clojure-cheatsheet
+  :init
+  (el-get-bundle clojure-emacs/clojure-cheatsheet))
 
+(use-package clojure-snippets
+  :init
+  (el-get-bundle mpenet/clojure-snippets))
