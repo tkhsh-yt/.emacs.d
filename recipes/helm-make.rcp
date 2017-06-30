@@ -1,0 +1,5 @@
+(:name helm-make
+       :description "Select a Makefile target with helm"
+       :type github
+       :pkgname "abo-abo/helm-make"
+       :depends (helm projectile))

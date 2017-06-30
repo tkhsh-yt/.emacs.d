@@ -1,0 +1,5 @@
+(:name helm-books
+       :description "Book search interface for emacs helm"
+       :type github
+       :pkgname "grugrut/helm-books"
+       :depends (helm))

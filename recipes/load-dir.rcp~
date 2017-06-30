@@ -1,0 +1,5 @@
+(:name load-dir
+       :description "Load all Emacs Lisp files in a given directory"
+       :website "https://github.com/emacsmirror/load-dir"
+       :type github
+       :pkgname "emacsmirror/load-dir.el")

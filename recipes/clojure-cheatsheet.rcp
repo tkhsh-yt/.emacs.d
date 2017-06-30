@@ -1,0 +1,5 @@
+(:name clojure-cheatsheet
+       :description "The Clojure Cheatsheet for Emacs"
+       :type github
+       :pkgname "clojure-emacs/clojure-cheatsheet"
+       :depends (helm cider))

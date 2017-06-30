@@ -1,0 +1,6 @@
+(:name company-go
+       :description "company-mode backend for Go (using gocode)"
+       :website "https://github.com/nsf/gocode/blob/master/emacs-company/company-go.el"
+       :type http
+       :url "https://raw.githubusercontent.com/nsf/gocode/master/emacs-company/company-go.el"
+       :depends (company go-mode))

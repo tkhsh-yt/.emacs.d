@@ -1,0 +1,5 @@
+(:name req-package
+       :description "dependency management system on top of use-package"
+       :type github
+       :pkgname "edvorg/req-package"
+       :depends (use-package dash log4e ht))

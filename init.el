@@ -2,6 +2,15 @@
 
 (setq custom-file (locate-user-emacs-file "custom.el"))
 
+;; server
+(require 'server)
+(unless (server-running-p)
+  (server-start))
+
+;; recompile
+(defconst my-init-dir (locate-user-emacs-file "init.d"))
+(add-hook 'kill-emacs-hook (lambda () (byte-recompile-directory my-init-dir 0 t)))
+
 ;; el-get
 (when load-file-name
   (setq user-emacs-directory (file-name-directory load-file-name)))
@@ -13,25 +22,42 @@
        "https://raw.githubusercontent.com/dimitri/el-get/master/el-get-install.el")
     (goto-char (point-max))
     (eval-print-last-sexp)))
+(add-to-list 'el-get-recipe-path (locate-user-emacs-file "recipes"))
+(el-get 'sync)
+
 
 ;; use-package
 (el-get-bundle use-package)
 (require 'use-package)
-(add-to-list 'el-get-recipe-path (locate-user-emacs-file "recipes"))
+
+;; req-package
+(el-get-bundle req-package)
+(use-package req-package
+  :config
+  (req-package--log-set-level 'trace))
+
+(el-get-bundle general)
+
+(req-package load-dir
+  :loader :el-get
+  :force t
+  :init
+  (setq force-load-messages nil)
+  (setq load-dir-debug t)
+  (setq load-dir-recursive t)
+  :config
+  (message "hoge")
+  (load-dir-one my-init-dir)
+  (req-package-finish))
 
 ;; init-loader
-(el-get-bundle init-loader)
-(use-package init-loader
-  :init
-  (setq init-loader-show-log-after-init t)
-  :config  
-  (init-loader-load (locate-user-emacs-file "inits")))
+;; (req-package init-loader
+;;   :loader :el-get
+;;   :force t
+;;   :init
+;;   (setq init-loader-show-log-after-init t)
+;;   :config
+;;   (init-loader-load (locate-user-emacs-file "inits"))
+;;   (req-package-finish))
 
-(el-get-bundle auto-compile)
 
-(use-package auto-compile
-  :diminish auto-compile-mode
-  :init
-  (setq load-prefer-newer t)
-  (auto-compile-on-load-mode)
-  (auto-compile-on-save-mode))
