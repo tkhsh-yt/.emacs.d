@@ -3,8 +3,13 @@
 
 (req-package dracula-theme
   :loader :el-get
+  :require (init-elscreen)
   :config
-  (load-theme 'dracula t))
+  (load-theme 'dracula t)
+  (copy-face 'mode-line 'elscreen-tab-current-screen-face)
+  (copy-face 'mode-line-inactive 'elscreen-tab-background-face)
+  (copy-face 'mode-line-inactive 'elscreen-tab-control-face)
+  (copy-face 'mode-line-inactive 'elscreen-tab-other-screen-face))
 
 (req-package powerline
   :loader :el-get
