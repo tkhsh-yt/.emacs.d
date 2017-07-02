@@ -11,6 +11,7 @@ ensime/
 recentf
 elscreen
 ac-comphist.dat
+*~
 
 # packages
 el-get/
