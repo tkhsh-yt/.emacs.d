@@ -25,7 +25,6 @@
 (add-to-list 'el-get-recipe-path (locate-user-emacs-file "recipes"))
 (el-get 'sync)
 
-
 ;; use-package
 (el-get-bundle use-package)
 (require 'use-package)
@@ -36,7 +35,18 @@
   :config
   (req-package--log-set-level 'trace))
 
-(el-get-bundle general)
+;; general (keybinds for use-package)
+(req-package general
+  :force t)
+
+;; chord (keybinds for use-package)
+(req-package use-package-chords
+  :loader :el-get
+  :force t
+  :config
+  (key-chord-mode 1))
+
+;; load config
 
 (req-package load-dir
   :loader :el-get
@@ -49,15 +59,4 @@
   (message "hoge")
   (load-dir-one my-init-dir)
   (req-package-finish))
-
-;; init-loader
-;; (req-package init-loader
-;;   :loader :el-get
-;;   :force t
-;;   :init
-;;   (setq init-loader-show-log-after-init t)
-;;   :config
-;;   (init-loader-load (locate-user-emacs-file "inits"))
-;;   (req-package-finish))
-
 
