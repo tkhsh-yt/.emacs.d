@@ -45,7 +45,7 @@
 
 ;; line number
 
-(req-package linum-mode
+(req-package linum
   :init
   (setq linum-delay t)
   :config
@@ -67,17 +67,16 @@
 
 (add-to-list 'default-frame-alist '(alpha . (0.9 0.9)))
 
-;; mode line
+;;; mode line
 
-(req-package display-time-mode
-  :init
-  (setq display-time-string-forms
-	'((format
-	   "%s/%s(%s) %s:%s" month day dayname 24-hours minutes))
-	line-number-mode t
-	column-number-mode t)
-  :config
-  (display-time-mode 1))
+;; time
+
+(setq display-time-string-forms
+      '((format
+	 "%s/%s(%s) %s:%s" month day dayname 24-hours minutes))
+      line-number-mode t
+      column-number-mode t)
+(display-time-mode 1)
 
 ;; anzu
 
@@ -87,6 +86,7 @@
   :init
   (setq anzu-replace-threshold 1000)
   (setq anzu-search-threshold 1000)
+  (setq anzu-replace-to-string-separator " => ")
   :config
   (global-anzu-mode +1)
   (global-set-key [remap query-replace] 'anzu-query-replace)

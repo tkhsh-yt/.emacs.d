@@ -4,9 +4,10 @@
 
 (req-package company
   :loader :el-get
+  :diminish company-mode
   :general
   (:keymaps 'company-mode-map	    
-	    "TAB" 'indent-for-tab-command
+	    "<tab>" 'company-indent-or-complete-common
 	    "C-i" 'company-complete)
   (:keymaps 'company-active-map
 	    "C-n" 'company-select-next

@@ -35,6 +35,10 @@
   :config
   (req-package--log-set-level 'trace))
 
+;; diminish
+(req-package diminish
+  :force t)
+
 ;; general (keybinds for use-package)
 (req-package general
   :force t)
@@ -56,7 +60,6 @@
   (setq load-dir-debug t)
   (setq load-dir-recursive t)
   :config
-  (message "hoge")
   (load-dir-one my-init-dir)
   (req-package-finish))
 

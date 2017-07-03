@@ -17,8 +17,11 @@
   :init
   (add-hook 'go-mode-hook 'go-eldoc-setup))
 
-(req-package company-go
-  :loader :el-get
-  :require (company go-mode))
+;; (req-package company-go
+;;   :loader :el-get
+;;   :require (company go-mode)
+;;   :init
+;;   (add-hook 'go-mode (lambda ()
+;; 		       (set (make-local-variable 'company-backends) '(company-go)))))
 
 (provide 'init-go)

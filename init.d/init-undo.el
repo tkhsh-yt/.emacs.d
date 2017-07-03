@@ -8,6 +8,7 @@
 
 (req-package undo-tree
   :loader :el-get
+  :diminish undo-tree-mode
   :config
   (global-undo-tree-mode))
 
