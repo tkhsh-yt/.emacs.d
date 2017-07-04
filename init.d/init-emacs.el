@@ -33,4 +33,8 @@
 (set-default 'truncate-lines t)
 (setq truncate-partial-width-windows t)
 
+;; sroll
+
+(setq scroll-conservatively 1)
+
 (provide 'init-emacs)
