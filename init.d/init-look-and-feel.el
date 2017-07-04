@@ -55,9 +55,7 @@
 
 ;; paren
 
-(req-package show-paren-mode
-  :coinfig
-  (show-paren-mode t))
+(show-paren-mode t)
 
 ;; font
 
