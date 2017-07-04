@@ -13,6 +13,8 @@ elscreen
 ac-comphist.dat
 *~
 
+.mc-lists.el
+
 # packages
 el-get/
 elpa/
