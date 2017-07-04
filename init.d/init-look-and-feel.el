@@ -25,6 +25,8 @@
   (setq spaceline-all-the-icons-separator-type 'arrow)
   :config
   (spaceline-all-the-icons-theme)
+  (spaceline-toggle-all-the-icons-projectile-off)
+  (spaceline-toggle-all-the-icons-buffer-path-off)
   (spaceline-all-the-icons--setup-anzu)
   (spaceline-all-the-icons--count-package-updates)
   (spaceline-all-the-icons--setup-neotree)
