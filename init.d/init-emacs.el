@@ -1,3 +1,5 @@
+(require 'req-package)
+
 ;; 起動時にメッセージを表示しない
 (setq inhibit-startup-message t)
 
@@ -24,9 +26,6 @@
 ;; ビープ音, フラッシュを消す
 (setq ring-bell-function 'ignore)
 
-;; C-k で行全体を削除
-(setq kill-whole-line t)
-
 ;; バッファの自動再読み込み
 (global-auto-revert-mode 1)
 
@@ -36,5 +35,14 @@
 ;; sroll
 
 (setq scroll-conservatively 1)
+
+;; delete
+
+(setq kill-whole-line t)
+(delete-selection-mode 1)
+
+;; buffer
+(bind-key "M-[" 'switch-to-prev-buffer)
+(bind-key "M-]" 'switch-to-next-buffer)
 
 (provide 'init-emacs)
