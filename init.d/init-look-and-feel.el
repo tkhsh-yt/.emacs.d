@@ -12,9 +12,23 @@
   (copy-face 'mode-line-inactive 'elscreen-tab-other-screen-face))
 
 (req-package powerline
+  :loader :el-get)
+
+(req-package spaceline
   :loader :el-get
+  :require (powerline))
+
+(req-package spaceline-all-the-icons
+  :loader :el-get
+  :require (spaceline all-the-icons)
+  :init
+  (setq spaceline-all-the-icons-separator-type 'arrow)
   :config
-  (powerline-default-theme))
+  (spaceline-all-the-icons-theme)
+  (spaceline-all-the-icons--setup-anzu)
+  (spaceline-all-the-icons--count-package-updates)
+  (spaceline-all-the-icons--setup-neotree)
+  (spaceline-all-the-icons--setup-git-ahead))
 
 (req-package diff-hl
   :loader :el-get

@@ -1,0 +1,5 @@
+(:name spaceline-all-the-icons
+       :description "A Spaceline Mode Line theme using All The Icons for Emacs"
+       :type github
+       :pkgname "domtronn/spaceline-all-the-icons.el"
+       :depends (all-the-icons spaceline memoize))
