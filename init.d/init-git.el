@@ -5,4 +5,6 @@
   :loader :el-get
   :bind (("C-' m" . magit-status)))
 
+(req-package git-timemachine)
+
 (provide 'init-git)
