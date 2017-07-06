@@ -5,10 +5,6 @@
   :loader :el-get
   :require (helm helm-ag)
   :diminish projectile-mode
-  :bind (("C-' p g" . helm-projectile-ag)
-	 ("C-' p p" . helm-projectile)
-	 ("C-' p s" . helm-multi-swoop-projectile)
-	 ("C-' p f" . helm-projectile-find-file))
   :init
   (setq projectile-completion-system 'helm)
   :config

@@ -3,17 +3,16 @@
 
 (req-package helm
   :loader :el-get
-  :require migemo
+  :require (init-keybinds migemo)
   :diminish (helm-mode helm-migemo-mode)
   :bind (("M-x" . helm-M-x)
 	 ("C-x C-f" . helm-find-files)
-	 ("C-:" . helm-mini)
-	 ("C-' y" . helm-show-kill-ring)
 	 ("C-x C-g" . helm-do-grep-ag)
-	 ("C-' s" . helm-swoop)
-	 ("C-' S" . helm-multi-swoop-all)
-	 ("C-' t" . helm-elscreen)
-	 ("C-' c" . helm-make))
+	 ("C-x C-r" . helm-recentf)
+	 ("C-q :" . helm-mini)
+	 ("C-q s" . helm-swoop)
+	 ("C-q S" . helm-multi-swoop-all)
+	 ("C-q y" . helm-show-kill-ring))
   :init
   (setq helm-M-x-fuzzy-match t)
   (setq helm-mini-default-sources '(helm-source-buffers-list
