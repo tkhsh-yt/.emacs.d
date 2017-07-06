@@ -5,7 +5,6 @@
 
 (req-package key-chord
   :loader :el-get
-  :chords (("  " . helm-M-x))
   :init
   (setq key-chord-one-key-delay 0.18))
 
