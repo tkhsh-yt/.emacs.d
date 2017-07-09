@@ -9,4 +9,6 @@
 
 (bind-key "C-q C-q" 'quoted-insert)
 
+(define-key global-map "\M-m" (make-sparse-keymap))
+
 (provide 'init-keybinds)

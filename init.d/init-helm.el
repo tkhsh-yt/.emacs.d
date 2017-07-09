@@ -8,11 +8,11 @@
   :bind (("M-x" . helm-M-x)
 	 ("C-x C-f" . helm-find-files)
 	 ("C-x C-g" . helm-do-grep-ag)
-	 ("C-x C-r" . helm-recentf)
-	 ("C-q :" . helm-mini)
-	 ("C-q s" . helm-swoop)
-	 ("C-q S" . helm-multi-swoop-all)
-	 ("C-q y" . helm-show-kill-ring))
+	 ("M-m h r" . helm-recentf)
+	 ("M-m h m" . helm-mini)
+	 ("M-m h s" . helm-swoop)
+	 ("M-m h S" . helm-multi-swoop-all)
+	 ("M-m h y" . helm-show-kill-ring))
   :init
   (setq helm-M-x-fuzzy-match t)
   (setq helm-mini-default-sources '(helm-source-buffers-list
