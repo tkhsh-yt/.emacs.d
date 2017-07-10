@@ -5,10 +5,6 @@
 ;; C-h で一文字前を消す
 (define-key key-translation-map (kbd "C-h") (kbd "<DEL>"))
 
-(define-key global-map "\C-q" (make-sparse-keymap))
-
-(bind-key "C-q C-q" 'quoted-insert)
-
-(define-key global-map "\M-m" (make-sparse-keymap))
+(define-key global-map "\C-o" (make-sparse-keymap))
 
 (provide 'init-keybinds)

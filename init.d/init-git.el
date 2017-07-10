@@ -4,7 +4,7 @@
 (req-package magit
   :loader :el-get
   :require (init-keybinds)
-  :bind (("M-m m s" . magit-status)))
+  :bind (("C-o m s" . magit-status)))
 
 (req-package git-timemachine)
 
