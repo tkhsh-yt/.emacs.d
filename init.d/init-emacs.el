@@ -45,4 +45,6 @@
 (bind-key "M-[" 'switch-to-prev-buffer)
 (bind-key "M-]" 'switch-to-next-buffer)
 
+(setq-default indent-tabs-mode nil)
+
 (provide 'init-emacs)
