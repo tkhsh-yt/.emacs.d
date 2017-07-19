@@ -1,7 +1,26 @@
 (provide 'req-package)
 (provide 'el-get)
 
-(req-package scala-mode2
+;; prettify-symbols
+(setq scala-prettify-symbols
+      '(("=>" . ?⇒)
+	("<-" . ?←)
+	("->" . ?→)
+	("undefined" . ?⊥)
+	("&&" . ?∧)
+	("||" . ?∨)
+	("<<<" . ?⋘)
+	(">>>" . ?⋙)
+	("++" . ?⧺)
+	("any" . ?∃)
+	("all" . ?∀)
+	("traverse" . ?↦)
+	("lambda" . ?λ)
+	("alpha" . ?α)
+	("beta" . ?β)
+        ("Unit" . ?∅)))
+
+(req-package scala-mode
   :loader :el-get
   :interpreter
   ("scala" . scala-mode)
@@ -38,10 +57,6 @@
          (insert ".")
          (company-complete))))
 
-(defun scala/completing-dot-ac ()
-  (insert ".")
-  (ac-trigger-key-command t))
-
 ;; Interactive commands
 
 (defun scala/completing-dot ()
@@ -58,24 +73,5 @@
          (scala/completing-dot-company))
         ((eq ensime-completion-style 'auto-complete)
          (scala/completing-dot-ac))))
-
-;; prettify-symbols
-(setq scala-prettify-symbols
-      '(("=>" . ?⇒)
-	("<-" . ?←)
-	("->" . ?→)
-	("undefined" . ?⊥)
-	("&&" . ?∧)
-	("||" . ?∨)
-	("<<<" . ?⋘)
-	(">>>" . ?⋙)
-	("++" . ?⧺)
-	("any" . ?∃)
-	("all" . ?∀)
-	("traverse" . ?↦)
-	("lambda" . ?λ)
-	("alpha" . ?α)
-	("beta" . ?β)
-("Unit" . ?∅)))
 
 (provide 'init-scala)
