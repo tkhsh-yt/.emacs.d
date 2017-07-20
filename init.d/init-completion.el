@@ -7,8 +7,8 @@
   :diminish company-mode
   :general
   (:keymaps 'company-mode-map	    
-	    "<tab>" 'company-indent-or-complete-common
-	    "C-i" 'company-complete)
+	    "<tab>" 'indent-according-to-mode
+            "C-i" 'company-complete)
   (:keymaps 'company-active-map
 	    "C-n" 'company-select-next
 	    "C-p" 'company-select-previous
