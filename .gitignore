@@ -24,3 +24,6 @@ projectile-bookmarks.eld
 
 # binary
 *.elc
+
+# ssh
+tramp
