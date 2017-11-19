@@ -1,4 +1,5 @@
 (use-package highlight-symbol
+  :diminish highlight-symbol-mode
   :init
   (add-hook 'prog-mode-hook 'highlight-symbol-mode)
   (add-hook 'prog-mode-hook 'highlight-symbol-nav-mode)
