@@ -1,5 +1,0 @@
-(:name use-package-chords
-       :description "key-chord keyword for use-package"
-       :type github
-       :pkgname "waymondo/use-package-chords"
-       :depends (use-package key-chord))

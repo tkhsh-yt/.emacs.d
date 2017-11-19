@@ -1,5 +1,0 @@
-(:name helm-elscreen
-       :description "Helm interface to elscreen"
-       :type github
-       :pkgname "emacs-helm/helm-elscreen"
-       :depends (helm))
