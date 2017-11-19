@@ -3,9 +3,9 @@
   (undohist-initialize))
 
 (use-package undo-tree
-  :defer t
+  :bind (("C-x u" . undo-tree-redo))
   :config
-  (global-undo-tree-mode))
+  (global-undo-tree-mode t))
 
 (use-package redo+
   :bind (("C-M-/" . redo))
