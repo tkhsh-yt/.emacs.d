@@ -1,5 +1,5 @@
 (use-package elscreen
-  :bind (("<C-tab>" . elscreen-next)
+  :bind (("<C-tab>"         . elscreen-next)
          ("<C-iso-lefttab>" . elscreen-previous))
   :init
   (elscreen-start)
