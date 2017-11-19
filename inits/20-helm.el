@@ -2,8 +2,10 @@
   :diminish (helm-mode)
   :bind (("M-x"  . helm-M-x)
          ("C-x C-f" . helm-find-files)
-         ;; ("M-y" . helm-show-kill-ring)
-         )
+         ("M-y" . helm-show-kill-ring)
+         ("C-x b" . helm-mini)
+         ("C-c h o" . helm-occur)
+         ("C-h SPC" . helm-all-mark-rings))
   :init
   (bind-key "C-c h" helm-command-prefix)
   (unbind-key "C-x c")
