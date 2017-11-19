@@ -1,4 +1,4 @@
-(use-package ddskk
+(use-package skk-autoloads
   :bind (("C-x j" . skk-mode))
   :init
   (add-hook 'isearch-mode-hook 'skk-isearch-mode-setup)
@@ -8,4 +8,3 @@
   (setq skk-byte-compile-init-file t)
   (setq skk-kutouten-type 'en)
   (setq skk-show-candidates-always-pop-to-buffer t))
-
