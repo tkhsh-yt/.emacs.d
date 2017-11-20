@@ -21,6 +21,7 @@ elpa/
 
 # projectile
 projectile-bookmarks.eld
+projectile.cache
 
 # binary
 *.elc
