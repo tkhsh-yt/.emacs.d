@@ -34,6 +34,7 @@
 (el-get-bundle helm-descbinds)
 (el-get-bundle helm-swoop)
 (el-get-bundle helm-ag)
+(el-get-bundle helm-projectile)
 
 ;; git
 
@@ -43,3 +44,6 @@
 
 (el-get-bundle highlight-symbol)
 
+;; project
+
+(el-get-bundle projectile)
