@@ -49,3 +49,7 @@
 (el-get-bundle projectile)
 
 (el-get-bundle ag)
+
+;; TeX
+
+(el-get-bundle auctex)
