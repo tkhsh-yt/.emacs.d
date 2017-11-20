@@ -5,6 +5,7 @@
          ("M-y"     . helm-show-kill-ring)
          ("C-x b"   . helm-mini)
          ("C-c h o" . helm-occur)
+         ("C-c h g" . helm-ag)
          ("C-h SPC" . helm-all-mark-rings))
   :init
   (bind-key "C-c h" helm-command-prefix)
@@ -17,3 +18,8 @@
              ("C-i"   . helm-execute-persistent-action)
              ("C-z"   . helm-select-action))
   (setq helm-M-x-fuzzy-match t))
+
+(use-package helm-ag
+  :config
+  (custom-set-variables
+   '(helm-ag-base-command "rg --vimgrep --no-heading")))

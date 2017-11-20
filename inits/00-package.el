@@ -47,3 +47,5 @@
 ;; project
 
 (el-get-bundle projectile)
+
+(el-get-bundle ag)
