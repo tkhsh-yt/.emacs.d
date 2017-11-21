@@ -70,14 +70,17 @@
 
 ;; フォント
 
-(set-face-attribute 'default nil :family "Source Han Code JP")
+(when (eq system-type 'darwin)
+  (set-face-attribute 'default nil :family "Source Han Code JP" :height 160))
+
+(when (eq system-type 'gnu/linux)
+  (set-face-attribute 'default nil :family "Source Han Code JP"))
 
 ;; 透過設定
 
 (add-to-list 'default-frame-alist '(alpha . (0.9 0.9)))
 
 ;; 時計を表示
-
 
 (setq display-time-string-forms
       '((format
@@ -89,3 +92,8 @@
 ;; スクロールバーを非表示
 
 (set-scroll-bar-mode nil)
+
+;; 起動時にフルスクリーンにする
+
+(when (eq system-type 'darwin) ;; macOS
+  (set-frame-parameter nil 'fullscreen 'fullboth))
