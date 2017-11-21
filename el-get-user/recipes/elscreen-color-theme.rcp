@@ -1,0 +1,5 @@
+(:name elscreen
+       :description "elscreen patched to work with recent emacs http://www.morishima.net/~naoto/elscreen-ja/"
+       :website "https://github.com/knu/elscreen/blob/master/elscreen-color-theme.el"
+       :type github
+       :pkgname "knu/elscreen")

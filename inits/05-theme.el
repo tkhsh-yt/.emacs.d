@@ -1,4 +1,3 @@
 (if window-system
-    (progn
-      (load-theme 'dracula t)))
-
+    (load-theme 'dracula t)
+  (load-theme 'zenburn t))

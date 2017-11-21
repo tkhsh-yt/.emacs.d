@@ -6,9 +6,13 @@
 
 (el-get-bundle dracula-theme)
 
+(el-get-bundle zenburn)
+
 ;; tab
 
 (el-get-bundle elscreen)
+
+(el-get-bundle elscreen-color-theme)
 
 ;; search
 
