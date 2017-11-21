@@ -6,7 +6,7 @@
 
 (el-get-bundle dracula-theme)
 
-(el-get-bundle zenburn)
+(el-get-bundle zenburn-theme)
 
 ;; tab
 
