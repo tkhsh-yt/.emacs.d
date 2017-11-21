@@ -74,7 +74,7 @@
   (set-face-attribute 'default nil :family "Source Han Code JP" :height 160))
 
 (when (eq system-type 'gnu/linux)
-  (set-face-attribute 'default nil :family "Source Han Code JP"))
+  (set-face-attribute 'default nil :family "Source Han Code JP" :height 125))
 
 ;; 透過設定
 
