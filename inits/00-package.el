@@ -43,6 +43,7 @@
 ;; git
 
 (el-get-bundle magit)
+(el-get-bundle magit-popup)
 
 ;; highlight
 
