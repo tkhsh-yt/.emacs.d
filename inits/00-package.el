@@ -18,6 +18,10 @@
 
 (el-get-bundle anzu)
 
+;; paren
+
+(el-get-bundle smartparens)
+
 ;; undo
 
 (el-get-bundle undohist)

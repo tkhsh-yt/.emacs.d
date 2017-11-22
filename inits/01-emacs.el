@@ -64,10 +64,6 @@
 
 (show-paren-mode t)
 
-;; 括弧の自動挿入
-
-(electric-pair-mode t)
-
 ;; フォント
 
 (when (eq system-type 'darwin)
