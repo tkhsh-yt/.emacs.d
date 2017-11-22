@@ -7,7 +7,7 @@
 (el-get-bundle dracula-theme)
 (el-get-bundle zenburn-theme)
 
-;; completin
+;; complement
 
 (el-get-bundle company-mode)
 
