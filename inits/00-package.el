@@ -5,7 +5,6 @@
 ;; theme
 
 (el-get-bundle dracula-theme)
-
 (el-get-bundle zenburn-theme)
 
 ;; completin
@@ -15,8 +14,6 @@
 ;; tab
 
 (el-get-bundle elscreen)
-
-(el-get-bundle elscreen-color-theme)
 
 ;; search
 
