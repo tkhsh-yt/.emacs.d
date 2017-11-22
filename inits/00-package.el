@@ -54,6 +54,11 @@
 (el-get-bundle projectile)
 
 (el-get-bundle ag)
+
+;; jump
+
+(el-get-bundle avy)
+
 ;; yank
 
 (el-get-bundle easy-kill)
