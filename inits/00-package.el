@@ -67,3 +67,9 @@
 ;; yank
 
 (el-get-bundle easy-kill)
+
+
+;; emoji
+
+(el-get-bundle emoji-fontset)
+
