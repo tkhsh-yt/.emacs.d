@@ -8,6 +8,10 @@
 
 (el-get-bundle zenburn-theme)
 
+;; completin
+
+(el-get-bundle company-mode)
+
 ;; tab
 
 (el-get-bundle elscreen)
