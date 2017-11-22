@@ -1,5 +1,5 @@
 (use-package smartparens
   :diminish smartparens-mode
   :init
-  (smartparens-global-strict-mode t)
+  (smartparens-global-mode t)
   (show-smartparens-global-mode t))
