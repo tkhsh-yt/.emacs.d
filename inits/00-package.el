@@ -7,6 +7,10 @@
 (el-get-bundle dracula-theme)
 (el-get-bundle zenburn-theme)
 
+;; path
+
+(el-get-bundle exec-path-from-shell)
+
 ;; complement
 
 (el-get-bundle company-mode)
