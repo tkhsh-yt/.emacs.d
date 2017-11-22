@@ -68,6 +68,9 @@
 
 (el-get-bundle easy-kill)
 
+;; markdown
+
+(el-get-bundle markdown-mode)
 
 ;; emoji
 
