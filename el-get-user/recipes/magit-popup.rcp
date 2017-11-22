@@ -1,0 +1,5 @@
+(:name magit-popup
+       :description "Define prefix-infix-suffix command combos https://github.com/magit/magit/pull/3273 https://magit.vc/manual/magit-popup"
+       :website "https://github.com/magit/magit-popup"
+       :type github
+       :pkgname "magit/magit-popup")
