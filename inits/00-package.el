@@ -76,3 +76,6 @@
 
 (el-get-bundle emoji-fontset)
 
+;; org
+
+(el-get-bundle org-bullets)
