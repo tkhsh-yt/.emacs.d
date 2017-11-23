@@ -1,0 +1,5 @@
+(:name dired-hacks
+       :description "Collection of useful dired additions"
+       :website "https://github.com/Fuco1/dired-hacks"
+       :type github
+       :pkgname "Fuco1/dired-hacks")

@@ -11,6 +11,12 @@
 
 (el-get-bundle exec-path-from-shell)
 
+;; dired
+
+(el-get-bundle dired-hacks)
+
+(el-get-bundle dired-k)
+
 ;; complement
 
 (el-get-bundle company-mode)
@@ -32,7 +38,6 @@
 (el-get-bundle undohist)
 
 (el-get-bundle undo-tree)
-
 (el-get-bundle point-undo)
 
 (el-get-bundle redo+)
