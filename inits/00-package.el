@@ -83,3 +83,7 @@
 ;; org
 
 (el-get-bundle org-bullets)
+
+;; Lisp
+
+(el-get-bundle paredit)
