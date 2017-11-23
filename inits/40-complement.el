@@ -1,9 +1,12 @@
 (use-package company-mode
-  :bind (:map company-mode-map
-         ("C-i" . company-complete)
+  :diminish company-mode
+  :bind (("C-M-i" . company-complete)
+         :map company-mode-map
+         ("TAB" . indent-for-tab-command)
          :map company-active-map
          ("C-n" . company-select-next)
          ("C-p" . company-select-previous)
+         ("C-s" . company-filter-candidates)
          :map company-search-map
          ("C-n" . company-select-next)
          ("C-p" . company-select-previous))
