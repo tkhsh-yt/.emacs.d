@@ -88,3 +88,7 @@
 ;; org
 
 (el-get-bundle org-bullets)
+
+;; scheme
+
+(el-get-bundle geiser)
