@@ -1,0 +1,6 @@
+(:name zoutline
+       :description "Emacs library for outlines"
+       :website "https://github.com/abo-abo/zoutline"
+       :type github
+       :pkgname "abo-abo/zoutline")
+

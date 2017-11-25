@@ -91,8 +91,7 @@
 
 ;; lisp
 
-(el-get-bundle lispy
-  :depends (swiper hydra))
+(el-get-bundle lispy)
 
 ;; scheme
 

@@ -1,0 +1,6 @@
+(:name lispy
+       :description "short and sweet LISP editing http://oremacs.com/lispy/"
+       :website "https://github.com/abo-abo/lispy"
+       :type github
+       :pkgname "abo-abo/lispy"
+       :depends (ace-window iedit swiper hydra zoutline))
