@@ -89,6 +89,11 @@
 
 (el-get-bundle org-bullets)
 
+;; lisp
+
+(el-get-bundle lispy
+  :depends (swiper hydra))
+
 ;; scheme
 
 (el-get-bundle geiser)
