@@ -97,3 +97,9 @@
 ;; scheme
 
 (el-get-bundle geiser)
+
+;; scala
+
+(el-get-bundle scala-mode)
+
+(el-get-bundle ensime)
