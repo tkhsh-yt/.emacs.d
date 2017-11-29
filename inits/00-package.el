@@ -63,6 +63,8 @@
 
 (el-get-bundle highlight-symbol)
 
+(el-get-bundle diff-hl)
+
 ;; project
 
 (el-get-bundle projectile)
