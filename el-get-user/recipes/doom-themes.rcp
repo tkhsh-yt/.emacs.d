@@ -1,0 +1,7 @@
+(:name doom-themes
+       :description "An opinionated pack of modern color-themes"
+       :website "https://github.com/hlissner/emacs-doom-themes"
+       :type github
+       :pkgname "hlissner/emacs-doom-themes"
+       :post-init (add-to-list 'custom-theme-load-path default-directory))
+
