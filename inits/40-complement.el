@@ -13,6 +13,6 @@
   :init
   (global-company-mode +1)
   :config
-  (setq company-idle-delay 0.1
+  (setq company-idle-delay 0
         company-selection-wrap-around t
         company-dabbrev-around t))
