@@ -4,6 +4,9 @@
   (add-hook 'isearch-mode-hook 'skk-isearch-mode-setup)
   (add-hook 'isearch-mode-end-hook 'skk-isearch-mode-cleanup)
   :config
-  (setq skk-isearch-start-mode 'latin)
-  (setq skk-byte-compile-init-file t)
-  (setq skk-kutouten-type 'en))
+  (setq skk-isearch-start-mode     'latin
+        skk-byte-compile-init-file t
+        skk-kutouten-type          'en)
+  (setq skk-server-host            "localhost"
+        skk-server-portnum         1178
+        skk-server-report-response t))
