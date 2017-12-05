@@ -3,6 +3,7 @@
   (undohist-initialize))
 
 (use-package undo-tree
+  :diminish (undo-tree-mode)
   :bind (("C-x u" . undo-tree-redo))
   :config
   (global-undo-tree-mode t))

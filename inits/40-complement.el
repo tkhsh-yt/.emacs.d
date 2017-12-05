@@ -1,5 +1,5 @@
 (use-package company-mode
-  :diminish company-mode
+  :diminish (company-mode global-company-mode)
   :bind (("C-M-i" . company-complete)
          :map company-mode-map
          ("TAB" . indent-for-tab-command)
@@ -16,3 +16,4 @@
   (setq company-idle-delay 0
         company-selection-wrap-around t
         company-dabbrev-around t))
+
