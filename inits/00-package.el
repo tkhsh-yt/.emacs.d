@@ -83,10 +83,6 @@
 
 (el-get-bundle markdown-mode)
 
-;; emoji
-
-(el-get-bundle emoji-fontset)
-
 ;; org
 
 (el-get-bundle org-bullets)
