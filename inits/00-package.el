@@ -95,3 +95,11 @@
 ;; scheme
 
 (el-get-bundle geiser)
+
+;; go
+
+(el-get-bundle go-mode)
+
+(el-get-bundle go-company)
+
+(el-get-bundle go-eldoc)
