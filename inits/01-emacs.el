@@ -84,6 +84,10 @@
 
 (show-paren-mode t)
 
+;; タブ幅
+
+(setq default-tab-width 2)
+
 ;; 透過設定
 
 (add-to-list 'default-frame-alist '(alpha . (0.9 0.9)))
