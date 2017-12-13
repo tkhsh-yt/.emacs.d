@@ -79,6 +79,10 @@
 
 (el-get-bundle easy-kill)
 
+;; snippet
+
+(el-get-bundle yasnippet)
+
 ;; markdown
 
 (el-get-bundle markdown-mode)
@@ -103,3 +107,11 @@
 (el-get-bundle go-company)
 
 (el-get-bundle go-eldoc)
+
+;; clojure
+
+(el-get-bundle clojure-mode)
+
+(el-get-bundle cider)
+
+(el-get-bundle clojure-snippets)
