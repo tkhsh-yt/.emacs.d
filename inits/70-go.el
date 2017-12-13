@@ -1,5 +1,7 @@
 (use-package go-mode
-  :bind (("M-." . godef-jump)
+  :defer t
+  :bind (:map go-mode-map
+         ("M-." . godef-jump)
          ("M-," . pop-tag-mark))
   :init
   (add-hook 'go-mode-hook '(lambda ()
@@ -12,11 +14,13 @@
                                      tab-mark)))))
 
 (use-package company-go
+  :defert t
   :init
   (add-hook 'go-mode-hook 'company-mode)
   (add-hook 'go-mode-hook '(lambda ()
                              (set (make-local-variable 'company-backends) '(company-go)))))
 
 (use-package go-eldoc
+  :defert t
   :init
   (add-hook 'go-mode-hook 'go-eldoc-setup))
