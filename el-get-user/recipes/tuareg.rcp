@@ -1,0 +1,6 @@
+(:name tuareg
+       :description "Emacs OCaml mode"
+       :website "https://github.com/ocaml/tuareg"
+       :type github
+       :pkgname "ocaml/tuareg"
+       :build `(("make" "install")))

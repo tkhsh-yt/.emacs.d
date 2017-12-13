@@ -115,3 +115,9 @@
 (el-get-bundle cider)
 
 (el-get-bundle clojure-snippets)
+
+;; ocaml
+
+(el-get-bundle tuareg)
+
+(el-get-bundle merlin)
