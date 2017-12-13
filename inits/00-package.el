@@ -121,3 +121,5 @@
 (el-get-bundle tuareg)
 
 (el-get-bundle merlin)
+
+(el-get-bundle ocamlspot)

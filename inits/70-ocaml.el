@@ -1,9 +1,17 @@
-(use-package tuareg)
+;;;; Dependencies
+;;;; - opam
+;;;;   - ocamlspot
+;;;;   - merlin
+
+(use-package tuareg-mode
+  :defer t
+  :commands (tuareg-mode tuareg-run-ocaml ocamldebug)
+  :mode (("\\.ml[iylp]\\?" . tuareg-mode)))
 
 (defvar ocaml-version "4.06.0")
-(defvar opam-root (concat "~/.opam/"))
-(defvar merlin-share-dir (concat opam-root ocaml-version "/share/emacs/site-lisp"))
-(defvar merlin-bin-dir (concat opam-root ocaml-version "/bin/ocamlmerlin"))
+(defvar opam-root (concat "~/.opam/" ocaml-version))
+(defvar merlin-share-dir (concat opam-root "/share/emacs/site-lisp"))
+(defvar merlin-bin-dir (concat opam-root "/bin/ocamlmerlin"))
 
 (push merlin-share-dir load-path)
 (setq merlin-command (concat merlin-bin-dir))
@@ -14,3 +22,15 @@
   :init
   (add-hook 'tuareg-mode-hook 'merlin-mode)
   (add-hook 'caml-hode-hook 'merlin-mode))
+
+(use-package ocamlspot
+  :bind (:tuareg-mode-map
+         ("C-c ;" . ocamlspot-query)
+         ("C-c :" . ocamlspot-query-interface)
+         ("C-c '" . ocamlspot-query-uses)
+         ("C-c C-t" . ocamlspot-type)
+         ("C-c C-y" . ocamlspot-type-and-copy)
+         ("C-c t" . caml-types-show-type)
+         ("C-c p" . ocamlspot-pop-jump-stack))
+  :init
+  (setq ocamlspot-command (concat opam-root "/bin/ocamlspot")))
