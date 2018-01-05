@@ -15,7 +15,7 @@
 
 (use-package dired-k
   :defer t
-  :bind () (:map dired-mode-map
+  :bind (:map dired-mode-map
                  ("g" . dired-k))
   :init
   (add-hook 'dired-initial-position-hook 'dired-k)
