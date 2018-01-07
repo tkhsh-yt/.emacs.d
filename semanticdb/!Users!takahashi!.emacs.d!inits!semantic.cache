@@ -1,0 +1,259 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("el-get-bundle" code nil nil [9 30])
+            ("el-get-bundle" code nil nil [42 71])
+            ("el-get-bundle" code nil nil [72 101])
+            ("el-get-bundle" code nil nil [112 148])
+            ("el-get-bundle" code nil nil [160 187])
+            ("el-get-bundle" code nil nil [189 212])
+            ("el-get-bundle" code nil nil [229 257])
+            ("el-get-bundle" code nil nil [267 291])
+            ("el-get-bundle" code nil nil [304 324])
+            ("el-get-bundle" code nil nil [336 363])
+            ("el-get-bundle" code nil nil [374 398])
+            ("el-get-bundle" code nil nil [400 425])
+            ("el-get-bundle" code nil nil [426 452])
+            ("el-get-bundle" code nil nil [454 475])
+            ("el-get-bundle" code nil nil [489 516])
+            ("el-get-bundle" code nil nil [527 547])
+            ("el-get-bundle" code nil nil [548 578])
+            ("el-get-bundle" code nil nil [579 605])
+            ("el-get-bundle" code nil nil [606 629])
+            ("el-get-bundle" code nil nil [630 661])
+            ("el-get-bundle" code nil nil [671 692])
+            ("el-get-bundle" code nil nil [693 720])
+            ("el-get-bundle" code nil nil [736 768])
+            ("el-get-bundle" code nil nil [770 793])
+            ("el-get-bundle" code nil nil [808 832])
+            ("el-get-bundle" code nil nil [846 872])
+            ("el-get-bundle" code nil nil [874 892])
+            ("el-get-bundle" code nil nil [903 922])
+            ("el-get-bundle" code nil nil [933 958])
+            ("el-get-bundle" code nil nil [972 997])
+            ("el-get-bundle" code nil nil [1012 1041])
+            ("el-get-bundle" code nil nil [1051 1078])
+            ("el-get-bundle" code nil nil [1089 1136])
+            ("el-get-bundle" code nil nil [1149 1171])
+            ("el-get-bundle" code nil nil [1180 1203])
+            ("el-get-bundle" code nil nil [1205 1231])
+            ("el-get-bundle" code nil nil [1233 1257])
+            ("el-get-bundle" code nil nil [1271 1299])
+            ("el-get-bundle" code nil nil [1301 1322])
+            ("el-get-bundle" code nil nil [1324 1356])
+            ("el-get-bundle" code nil nil [1368 1390])
+            ("el-get-bundle" code nil nil [1392 1414])
+            ("el-get-bundle" code nil nil [1416 1441]))          
+      :file "00-package.el"
+      :pointmax 1442
+      :fsize 1441
+      :lastmodtime '(23115 26164 6978 443000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("use-package" code nil nil [1 583])
+            ("use-package" code nil nil [585 799])
+            ("use-package" code nil nil [801 886]))          
+      :file "70-go.el"
+      :pointmax 887
+      :fsize 886
+      :lastmodtime '(23093 5198 262472 834000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("org-mode" use-package nil nil [1 34])
+            ("org-bullets" use-package nil nil [36 142]))          
+      :file "70-org.el"
+      :pointmax 143
+      :fsize 142
+      :lastmodtime '(23093 5198 264710 374000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("tuareg-mode" use-package nil nil [67 200])
+            ("ocaml-version" variable (:default-value "4.06.0") nil [202 233])
+            ("opam-root" variable (:default-value (concat "~/.opam/" ocaml-version)) nil [234 286])
+            ("merlin-share-dir" variable (:default-value (concat opam-root "/share/emacs/site-lisp")) nil [287 356])
+            ("merlin-bin-dir" variable (:default-value (concat opam-root "/bin/ocamlmerlin")) nil [357 418])
+            ("push" code nil nil [420 453])
+            ("merlin-command (concat merlin-bin-dir)" setq nil nil [454 499])
+            ("merlin-mode" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [500 548])
+            ("merlin-mode" use-package nil nil [550 680])
+            ("ocamlspot" use-package nil nil [682 1102]))          
+      :file "70-ocaml.el"
+      :pointmax 1103
+      :fsize 1102
+      :lastmodtime '(23093 5198 264011 226000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("markdown-mode" use-package nil nil [1 79]))          
+      :file "70-markdown.el"
+      :pointmax 80
+      :fsize 79
+      :lastmodtime '(23061 18741 762901 383000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("lispy" use-package nil nil [1 241]))          
+      :file "70-lisp.el"
+      :pointmax 242
+      :fsize 241
+      :lastmodtime '(23093 5198 263651 381000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("hs-minor-mode" use-package nil nil [1 136]))          
+      :file "70-hs-minor-mode.el"
+      :pointmax 137
+      :fsize 136
+      :lastmodtime '(23083 38319 842236 118000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("clojure-mode" use-package nil nil [1 95])
+            ("clojure-snippets" use-package nil nil [97 138])
+            ("cider" use-package nil nil [140 764]))          
+      :file "70-clojure.el"
+      :pointmax 765
+      :fsize 764
+      :lastmodtime '(23093 5198 262165 209000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("yasnippet" use-package nil nil [1 24]))          
+      :file "60-yasnnipet.el"
+      :pointmax 25
+      :fsize 24
+      :lastmodtime '(23093 5198 261861 299000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("projectile" use-package nil nil [1 170])
+            ("helm-projectile" use-package nil nil [172 232]))          
+      :file "50-projectile.el"
+      :pointmax 233
+      :fsize 232
+      :lastmodtime '(23059 43844 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("magit" use-package nil nil [1 207]))          
+      :file "50-magit.el"
+      :pointmax 208
+      :fsize 227
+      :lastmodtime '(23060 65342 655271 462000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("company-mode" use-package nil nil [1 609]))          
+      :file "40-complement.el"
+      :pointmax 611
+      :fsize 610
+      :lastmodtime '(23078 28157 319955 347000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("whitespace" use-package nil nil [1 1083]))          
+      :file "30-whitespace.el"
+      :pointmax 1084
+      :fsize 1083
+      :lastmodtime '(23057 17482 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("recentf-ext" use-package nil nil [1 173]))          
+      :file "30-recentf.el"
+      :pointmax 174
+      :fsize 173
+      :lastmodtime '(23057 17482 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("easy-kill" use-package nil nil [1 52]))          
+      :file "20-yank.el"
+      :pointmax 53
+      :fsize 52
+      :lastmodtime '(23060 65342 652987 544000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("undohist" use-package nil nil [1 57])
+            ("undo-tree" use-package nil nil [59 186])
+            ("redo+" use-package nil nil [188 268])
+            ("point-undo" use-package nil nil [270 355]))          
+      :file "20-undo.el"
+      :pointmax 356
+      :fsize 355
+      :lastmodtime '(23078 28157 319359 402000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("smartparens" use-package nil nil [1 379]))          
+      :file "20-smartparens.el"
+      :pointmax 380
+      :fsize 379
+      :lastmodtime '(23076 46454 725932 387000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("highlight-symbol" use-package nil nil [1 232])
+            ("diff-hl" use-package nil nil [234 355]))          
+      :file "20-hilight.el"
+      :pointmax 356
+      :fsize 355
+      :lastmodtime '(23076 46454 725339 157000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("helm-config" use-package nil nil [1 599])
+            ("helm-ag" use-package nil nil [601 744])
+            ("helm-swoop" use-package nil nil [746 1417]))          
+      :file "20-helm.el"
+      :pointmax 1418
+      :fsize 1417
+      :lastmodtime '(23071 49006 105073 78000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("avy" use-package nil nil [1 110]))          
+      :file "20-avy.el"
+      :pointmax 111
+      :fsize 110
+      :lastmodtime '(23060 65342 648465 499000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "20-anzu.el"
+      :fsize 344
+      :lastmodtime '(23057 17482 0 0))
+)
+  :file "!Users!takahashi!.emacs.d!inits!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -65,6 +65,10 @@
 
 (el-get-bundle diff-hl)
 
+;; Flycheck
+
+(el-get-bundle flycheck)
+
 ;; project
 
 (el-get-bundle projectile)
@@ -90,6 +94,10 @@
 ;; org
 
 (el-get-bundle org-bullets)
+
+;; programming
+
+(el-get-bundle quickrun)
 
 ;; lisp
 

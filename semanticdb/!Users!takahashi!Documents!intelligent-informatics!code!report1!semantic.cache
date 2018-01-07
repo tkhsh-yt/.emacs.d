@@ -1,0 +1,65 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode scheme-mode
+      :tags 
+        '( ("wl" function (:arguments ("database")) nil [345 497])
+            ("query" function (:arguments ("qry")) nil [583 713])
+            ("answer" function (:arguments ("qry")) nil [716 839])
+            ("mquery2" function (:arguments ("qries" "pms")) nil [932 1577])
+            ("answer2" function (:arguments ("qries")) nil [1580 1766])
+            ("unify" function (:arguments ("p" "q")) nil [1798 2702])
+            ("occur-check?" function (:arguments ("var" "exp")) nil [2749 2945])
+            ("subst-compose" function (:arguments ("theta" "eta")) nil [3100 3853])
+            ("make-binding" function (:arguments ("var" "val")) nil [3856 3901])
+            ("instantiate" function (:arguments ("exp" "subst")) nil [3984 4372])
+            ("get-var" function (:arguments ("binding")) nil [4375 4445])
+            ("get-val" function (:arguments ("binding")) nil [4448 4530])
+            ("get-binding" function (:arguments ("var" "theta")) nil [4533 4628])
+            ("const?" function (:arguments ("exp")) nil [4659 4716])
+            ("var?" function (:arguments ("exp")) nil [4748 4863]))          
+      :file "2.scm"
+      :pointmax 4865
+      :fsize 5176
+      :lastmodtime '(23112 53585 422932 726000)
+      :unmatched-syntax '((semantic-list 142 . 343)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode scheme-mode
+      :tags 
+        '( ("stackgen" function nil nil [80 446])
+            ("d2" function (:arguments ("x" "E")) nil [524 784])
+            ("const?" variable (:default-value ("number?")) nil [787 809])
+            ("diff-constant" function (:arguments ("x" "E")) nil [812 841])
+            ("variable?" variable (:default-value ("symbol?")) nil [844 869])
+            ("diff-variable" function (:arguments ("x" "E")) nil [872 923])
+            ("sum?" function (:arguments ("E")) nil [926 980])
+            ("args" function (:arguments ("E")) nil [983 1007])
+            ("make-sum" function (:arguments ("x")) nil [1010 1042])
+            ("diff-sum" function (:arguments ("x" "E")) nil [1045 1126])
+            ("product?" function (:arguments ("E")) nil [1129 1187])
+            ("make-product" function (:arguments ("x")) nil [1190 1226])
+            ("diff-product" function (:arguments ("x" "E")) nil [1229 1452])
+            ("diff-product-args" function (:arguments ("x" "arg-list")) nil [1455 1744])
+            ("power?" function (:arguments ("E")) nil [1747 1826])
+            ("make-power" function (:arguments ("x")) nil [1829 1864])
+            ("diff-power" function (:arguments ("x" "E")) nil [1867 2006])
+            ("simplify" function (:arguments ("E")) nil [2009 2167])
+            ("simplify-sum" function (:arguments ("E")) nil [2170 2222])
+            ("simplify-product" function (:arguments ("E")) nil [2225 2321])
+            ("simplify-power" function (:arguments ("E")) nil [2324 2394])
+            ("simpl" function (:arguments ("op?" "make-op" "id" "E")) nil [2397 2604])
+            ("flat" function (:arguments ("op?" "x")) nil [2607 2777])
+            ("proper" function (:arguments ("make-op" "id" "x")) nil [2780 2894])
+            ("remove-if" function (:arguments ("f" "x")) nil [2897 3041])
+            ("evalform" function (:arguments ("E" "env")) nil [3114 3647]))          
+      :file "1.scm"
+      :pointmax 3649
+      :fsize 3648
+      :lastmodtime '(23112 53585 422580 705000)
+      :unmatched-syntax nil))
+  :file "!Users!takahashi!Documents!intelligent-informatics!code!report1!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

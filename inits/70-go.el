@@ -6,6 +6,7 @@
   :init
   (add-hook 'go-mode-hook '(lambda ()
                              (setq default-tab-width 2)
+                             (setq gofmt-command "goimports")
                              (add-hook 'before-save-hook 'gofmt-before-save)
                              (setq whitespace-style
                                    '(face

@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode js-mode
+      :tags nil
+      :file "saka_key_config.json"
+      :pointmax 9450
+      :fsize 9450
+      :lastmodtime '(23108 63778 675417 99000)
+      :unmatched-syntax nil))
+  :file "!Users!takahashi!Downloads!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
