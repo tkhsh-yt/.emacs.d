@@ -24,13 +24,23 @@
   (add-hook 'caml-hode-hook 'merlin-mode))
 
 (use-package ocamlspot
-  :bind (:tuareg-mode-map
-         ("C-c ;" . ocamlspot-query)
-         ("C-c :" . ocamlspot-query-interface)
-         ("C-c '" . ocamlspot-query-uses)
-         ("C-c C-t" . ocamlspot-type)
-         ("C-c C-y" . ocamlspot-type-and-copy)
-         ("C-c t" . caml-types-show-type)
-         ("C-c p" . ocamlspot-pop-jump-stack))
+  ;; :bind (:tuareg-mode-map
+  ;;        ("C-c ;" . ocamlspot-query)
+  ;;        ("C-c :" . ocamlspot-query-interface)
+  ;;        ("C-c '" . ocamlspot-query-uses)
+  ;;        ("C-c C-t" . ocamlspot-type)
+  ;;        ("C-c C-y" . ocamlspot-type-and-copy)
+  ;;        ("C-c t" . caml-types-show-type)
+  ;;        ("C-c p" . ocamlspot-pop-jump-stack))
   :init
+  (add-hook 'tuareg-mode-hook
+            '(lambda ()
+               (local-set-key "\C-c;" 'ocamlspot-query)
+               (local-set-key "\C-c:" 'ocamlspot-query-interface)
+               (local-set-key "\C-c'" 'ocamlspot-query-uses)
+               (local-set-key "\C-c\C-t" 'ocamlspot-type)
+               (local-set-key "\C-c\C-i" 'ocamlspot-xtype)
+               (local-set-key "\C-c\C-y" 'ocamlspot-type-and-copy)
+               (local-set-key "\C-ct" 'caml-types-show-type)
+               (local-set-key "\C-cp" 'ocamlspot-pop-jump-stack)))
   (setq ocamlspot-command (concat opam-root "/bin/ocamlspot")))

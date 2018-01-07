@@ -16,13 +16,13 @@
                                      tab-mark)))))
 
 (use-package company-go
-  :defert t
+  :defer t
   :init
   (add-hook 'go-mode-hook 'company-mode)
   (add-hook 'go-mode-hook '(lambda ()
                              (set (make-local-variable 'company-backends) '(company-go)))))
 
 (use-package go-eldoc
-  :defert t
+  :defer t
   :init
   (add-hook 'go-mode-hook 'go-eldoc-setup))

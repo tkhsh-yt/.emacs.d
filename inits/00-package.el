@@ -131,3 +131,9 @@
 (el-get-bundle merlin)
 
 (el-get-bundle ocamlspot)
+
+;; scala
+
+(el-get-bundle scala-mode)
+
+(el-get-bundle ensime)
