@@ -5,7 +5,7 @@
 (use-package undo-tree
   :diminish (undo-tree-mode)
   :bind (("C-x u" . undo-tree-redo))
-  :config
+  :init
   (global-undo-tree-mode t))
 
 (use-package redo+
