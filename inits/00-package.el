@@ -95,7 +95,15 @@
 
 (el-get-bundle org-bullets)
 
-;; programming
+;; pdf
+
+(el-get-bundle pdf-tools)
+
+;; tex
+
+(el-get-bundle auctex)
+
+;;; programming
 
 (el-get-bundle quickrun)
 

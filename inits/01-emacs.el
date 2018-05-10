@@ -14,6 +14,9 @@
 
 (global-linum-mode t)
 
+;; pdf を Emacs で開くと linum-mode が原因で
+;; 重くなるのを回避するための設定
+
 (defcustom linum-disabled-modes-list '(doc-view-mode pdf-view-mode)
   "* List of modes disabled when global linum mode is on"
   :type '(repeat (sexp :tag "Major mode"))
