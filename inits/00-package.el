@@ -145,3 +145,7 @@
 (el-get-bundle scala-mode)
 
 (el-get-bundle ensime)
+
+;; dart
+
+(el-get-bundle dart-mode)
