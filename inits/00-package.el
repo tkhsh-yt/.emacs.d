@@ -53,6 +53,7 @@
 (el-get-bundle helm-swoop)
 (el-get-bundle helm-ag)
 (el-get-bundle helm-projectile)
+(el-get-bundle helm-ghq)
 
 ;; git
 
@@ -78,6 +79,13 @@
 ;; jump
 
 (el-get-bundle avy)
+
+;; cursor
+
+(el-get-bundle multiple-cursors)
+(el-get-bundle mc-extras)
+(el-get-bundle expand-region)
+(el-get-bundle region-bindings-mode)
 
 ;; yank
 
