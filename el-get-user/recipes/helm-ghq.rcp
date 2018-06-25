@@ -1,0 +1,5 @@
+(:name helm-ghq
+       :description "ghq command with helm interface"
+       :website "https://github.com/SuzumiyaAoba/helm-ghq"
+       :type github
+       :pkgname "SuzumiyaAoba/helm-ghq")
