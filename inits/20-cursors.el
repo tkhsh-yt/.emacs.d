@@ -16,4 +16,4 @@
          ("u" . 'mc/remove-current-cursor)
          ("<tab>" . 'mc/cycle-forward)
          ("<backtab>" . 'mc/cycle-backward)
-          ("m" . 'mc/mark-more-like-this-extended)))
+         ("m" . 'mc/mark-more-like-this-extended)))
