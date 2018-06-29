@@ -6,7 +6,7 @@
          ("C-x b"   . helm-mini)
          ("C-c h o" . helm-occur)
          ("C-h SPC" . helm-all-mark-rings)
-         ("C-c g"   . helm-ghq)
+         ("C-c C-g" . helm-ghq)
          :map helm-map
          ("<tab>" . helm-execute-persistent-action)
          ("C-i"   . helm-execute-persistent-action)
