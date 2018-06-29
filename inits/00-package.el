@@ -132,6 +132,9 @@
 
 (el-get-bundle go-eldoc)
 
+(el-get-bundle direx)
+(el-get-bundle go-direx)
+
 ;; clojure
 
 (el-get-bundle clojure-mode)

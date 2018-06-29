@@ -26,3 +26,7 @@
   :defer t
   :init
   (add-hook 'go-mode-hook 'go-eldoc-setup))
+
+(use-package go-direx
+  :bind (:map go-mode-map
+         ("C-c C-j" . go-direx-pop-to-buffer)))

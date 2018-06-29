@@ -1,0 +1,5 @@
+(:name go-direx
+       :description "Tree style source code viewer for Go language"
+       :website "https://github.com/syohex/emacs-go-direx"
+       :type github
+       :pkgname "syohex/emacs-go-direx")
