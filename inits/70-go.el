@@ -2,7 +2,8 @@
   :defer t
   :bind (:map go-mode-map
          ("M-." . godef-jump)
-         ("M-," . pop-tag-mark))
+         ("M-," . pop-tag-mark)
+         ("C-c C-j" . go-direx-pop-to-buffer))
   :init
   (add-hook 'go-mode-hook '(lambda ()
                              (setq default-tab-width 2)
@@ -27,6 +28,3 @@
   :init
   (add-hook 'go-mode-hook 'go-eldoc-setup))
 
-(use-package go-direx
-  :bind (:map go-mode-map
-         ("C-c C-j" . go-direx-pop-to-buffer)))
