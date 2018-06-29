@@ -6,7 +6,8 @@
   :config
   (setq skk-isearch-start-mode     'latin
         skk-byte-compile-init-file t
-        skk-kutouten-type          'en)
+        skk-kutouten-type          'en
+        skk-henkan-strict-okuri-precedence t)
   (setq skk-server-host            "localhost"
         skk-server-portnum         1178
         skk-server-report-response t))
