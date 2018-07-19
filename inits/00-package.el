@@ -160,3 +160,7 @@
 ;; dart
 
 (el-get-bundle dart-mode)
+
+;; Hugo
+
+(el-get-bundle easy-hugo)

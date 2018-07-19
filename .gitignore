@@ -34,3 +34,6 @@ tramp
 semanticdb/
 
 \#recentf\#
+
+# hugo
+hugo-conf.el
