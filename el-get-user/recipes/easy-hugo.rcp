@@ -1,4 +1,4 @@
-(:name easy-fugo
+(:name easy-hugo
        :description "Emacs major mode for managing hugo"
        :wesite "https://github.com/masasam/emacs-easy-hugo"
        :type github
